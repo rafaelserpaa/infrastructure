@@ -2,13 +2,13 @@ name: Create S3 Static Site
 
 on:
   issues:
-    types:
-      - opened
+    type:
+      -opened
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
